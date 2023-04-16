@@ -25,7 +25,9 @@ stopwatch.stop();
 
 // Get the duration as a Duration object
 const duration = stopwatch.getDuration();
-console.log(`Duration: ${duration.hours} h ${duration.minutes} min ${duration.seconds} s ${duration.milliseconds.toFixed(2)} ms`);
+console.log(
+  `Duration: ${duration.hours} h ${duration.minutes} min ${duration.seconds} s ${duration.milliseconds.toFixed(2)} ms`
+);
 
 // Print the formatted duration
 stopwatch.printDuration();
@@ -41,6 +43,26 @@ stopwatch.reset();
 - getDuration(): Returns a Duration object representing the elapsed time. The object contains the properties hours, minutes, seconds, and milliseconds.
 - printDuration(): Prints the formatted duration string, adjusting the format based on the elapsed time.
 - reset(): Resets the stopwatch, setting the start and end times to null.
+
+## TypeScript Support
+
+This package includes TypeScript definitions for use in TypeScript projects.
+
+```typescript
+import Stopwatch from "dr-strange";
+import Duration from "dr-strange/duration";
+
+const stopwatch: Stopwatch = new Stopwatch();
+
+stopwatch.start();
+stopwatch.stop();
+
+const duration: Duration = stopwatch.getDuration();
+
+console.log(
+  `Duration: ${duration.hours}h ${duration.minutes}m ${duration.seconds}s ${duration.milliseconds}ms`
+);
+```
 
 ## Testing
 

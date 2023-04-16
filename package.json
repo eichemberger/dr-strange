@@ -1,6 +1,6 @@
 {
   "name": "dr-strange",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "German Eichemberger",
   "license": "MIT",
   "description": "A simple stopwatch utility package for measuring execution times of code snippets or functions in Node.js applications.",
@@ -12,6 +12,11 @@
     "type": "git",
     "url": "https://github.com/eichemberger/dr-strange.git"
   },
+  "keywords": [
+    "time-measuring",
+    "time",
+    "util"
+  ],
   "dependencies": {},
   "devDependencies": {
     "jest": "^27.4.5"
