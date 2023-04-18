@@ -7,7 +7,7 @@ Dr Strange is a simple stopwatch utility package for measuring execution times o
 Install Dr Strange as a development dependency:
 
 ```sh
-npm install --save-dev dr-strange
+npm install dr-strange
 ```
 
 ## Usage
